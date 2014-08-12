@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>VimWiki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/wiki.css" rel="stylesheet">
+    <script src="../static/js/jquery-1.10.2.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/wiki.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="content" id="content">
+
+<h1 id="toc_1">VimWiki</h1>
+<p>
+It is necessary to refernce Vim Note if you try to use VimWiki.
+</p>
+
+<h2 id="toc_1.1">快捷键</h2>
+
+<pre>
+    [count]&lt;Leader&gt;ww 在当前窗口打开第[count]个wiki首页
+    [count]&lt;Leader&gt;wt 在新标签页中打开第[count]个wiki索引文件
+    &lt;Leader&gt;ws 列出可选择的wiki列表
+    [count]&lt;Leader&gt;w&lt;Leader&gt;w 打开今天第[count]个wiki日记
+    [count]&lt;Leader&gt;w&lt;Leader&gt;t 在新标签页打开今天第[count]个wiki日记
+    [count]&lt;Leader&gt;wi 打开日记的首页
+    &lt;Leader&gt;wh 把当前wiki页面生成HTML--对应命令Vimwiki2HTML
+    &lt;Leader&gt;whh 把当前wiki页面转换为HTML并用浏览器打开
+    &lt;Leader&gt;w&lt;Leader&gt;i 更新diary主页（用于写完新的日志后，更新diary主页）
+    &lt;Leader&gt;wd 删除当前wiki页
+    &lt;Leader&gt;wr 重命名当前wiki页面
+
+</pre>
+
+<h2 id="toc_1.2">Wiki 语法</h2>
+
+<pre>
+    = = 标题（几个=号算号标题）
+    表格
+      | 年   | 最低温度 | 最高温度 |
+      |------|----------|----------|
+      | 2001 | 10       | 20       |
+      | 2002 | 20       | 30       |
+
+</pre>
+
+<p>
+<strong>Table</strong> 
+</p>
+<table class='center'>
+<tr>
+<th>
+年
+</th>
+<th>
+最低温度
+</th>
+<th>
+最高温度
+</th>
+</tr>
+<tr>
+<td>
+2001
+</td>
+<td>
+10
+</td>
+<td>
+20
+</td>
+</tr>
+<tr>
+<td>
+2002
+</td>
+<td>
+20
+</td>
+<td>
+30
+</td>
+</tr>
+</table>
+
+      </div>
+
+    </div>
+  </body>
+</html>

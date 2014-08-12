@@ -1,0 +1,37 @@
+= VimWiki =
+It is necessary to refernce Vim Note if you try to use VimWiki.
+
+== 快捷键 ==
+
+{{{ 
+    [count]<Leader>ww 在当前窗口打开第[count]个wiki首页
+    [count]<Leader>wt 在新标签页中打开第[count]个wiki索引文件
+    <Leader>ws 列出可选择的wiki列表
+    [count]<Leader>w<Leader>w 打开今天第[count]个wiki日记
+    [count]<Leader>w<Leader>t 在新标签页打开今天第[count]个wiki日记
+    [count]<Leader>wi 打开日记的首页
+    <Leader>wh 把当前wiki页面生成HTML--对应命令Vimwiki2HTML
+    <Leader>whh 把当前wiki页面转换为HTML并用浏览器打开
+    <Leader>w<Leader>i 更新diary主页（用于写完新的日志后，更新diary主页）
+    <Leader>wd 删除当前wiki页
+    <Leader>wr 重命名当前wiki页面
+
+}}}
+
+== Wiki 语法 ==
+
+{{{
+    = = 标题（几个=号算号标题）
+    表格
+      | 年   | 最低温度 | 最高温度 |
+      |------|----------|----------|
+      | 2001 | 10       | 20       |
+      | 2002 | 20       | 30       |
+
+}}}
+
+*Table* 
+ | 年   | 最低温度 | 最高温度 |
+ |------|----------|----------|
+ | 2001 | 10       | 20       |
+ | 2002 | 20       | 30       |
