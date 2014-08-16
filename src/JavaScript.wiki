@@ -1,0 +1,13 @@
+= JavaScript =
+
+基本操作
+
+1. 截取数组
+{{{
+    var array = [0,1,2,3,4,5,6,7,8,9,10];
+    alert(array.slice(0,11));// 0到11 
+    alert(array.slice(0,-5));//11-5=6     0到六，这个与substring截取不一样
+    alert(array.slice(0,6));//取数字6
+    alert(array.slice(-5,7));
+    alert(array.slice(2));//2开始到最后
+}}}
