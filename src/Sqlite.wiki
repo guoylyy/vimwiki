@@ -1,0 +1,11 @@
+= SQLITE = 
+
+== SQLAchemy ==
+1. 使用or条件查询
+{{{
+    from sqlachemy import or_
+    Object.query.filter(or_(xxx1,xxx2,xx3))
+}}}
+
+
+

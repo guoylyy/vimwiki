@@ -2,7 +2,7 @@
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8">
-    <title>吉他</title>
+    <title>Shell</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../static/css/wiki.css" rel="stylesheet">
@@ -16,17 +16,20 @@
 
       <div class="content" id="content">
 
-<h1 id="toc_1">吉他</h1>
-<p>
-世界上有那么多好听的歌，不能随心所欲地弹唱是非常可惜的。
-</p>
+<h1 id="toc_1">Shell</h1>
 
 <p>
-<a href="Guitar-RJJ吉他版第一期总结.html">Guitar-RJJ吉他版第一期总结</a>
+1. 统计自己使用命令的频率
 </p>
+<pre>
+    history | awk '{CMD[$2]++;count++;}END { for (a in CMD)\
+print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" \
+| column -c3 -s " " -t | sort -nr | nl |  head -n10
+
+</pre>
 
 <p>
-<a href="Guitar-RJJ吉他班第二期总结.html">Guitar-RJJ吉他班第二期总结</a>
+2.
 </p>
 
       </div>

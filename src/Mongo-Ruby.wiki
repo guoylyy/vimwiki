@@ -1,0 +1,27 @@
+= MongoDB and Ruby =
+
+在ruby中使用mongodb
+{{{
+sudo gem install mongo
+sudo gem install mongo_ext
+
+mongodb 支持了多种的表达式，比如说 $gt $gte
+当我们需要查询的时候可以调用：
+
+XXX.find({:a=>{“$gte => 5}}) //查询XXX对象中a属性大于等于5的结果
+
+同时，还可以支持过滤条件查询
+
+XXX.find({:a=>{“$gte => 5}, limit:10})
+XXX.find({:a=>{“$gte => 5}, sort:[:j,:desc]})
+
+
+update可以支持原子操作，但是要借助类似的内部语句：
+coll.update({:j=>0},{“$inc”=>{:j=>1}})
+这样的语法还有很多，如 $set, $unset….
+
+MongoDB 在Ruby中一些好用的库：
+- MongoMapper
+- - Mongoid
+- - activerecord-alt-mongo-adapter
+}}}

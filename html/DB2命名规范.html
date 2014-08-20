@@ -2,7 +2,7 @@
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8">
-    <title>吉他</title>
+    <title>DB2命名规范</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../static/css/wiki.css" rel="stylesheet">
@@ -16,17 +16,22 @@
 
       <div class="content" id="content">
 
-<h1 id="toc_1">吉他</h1>
+<h1 id="toc_1">DB2 命名规范</h1>
+
 <p>
-世界上有那么多好听的歌，不能随心所欲地弹唱是非常可惜的。
+数据库命名： 采用&lt;业务系统名称&gt;DB的命名方式，如IOCDB
 </p>
 
 <p>
-<a href="Guitar-RJJ吉他版第一期总结.html">Guitar-RJJ吉他版第一期总结</a>
+表空间命名: TS_&lt;XXX&gt;N,其中N为数字 00~99
 </p>
 
 <p>
-<a href="Guitar-RJJ吉他班第二期总结.html">Guitar-RJJ吉他班第二期总结</a>
+表命名： T_&lt;表类型标识&gt;_&lt;表标识&gt;, 如T_BS_TAX, T_DIC_TAX, BS为基本编码表，DIC为字典表;
+</p>
+
+<p>
+字段： 主键用P开头，外键FK开头，约束CK开头，索引IX开头,视图V开头，函数FN开头，触发器TR开头。
 </p>
 
       </div>

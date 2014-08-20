@@ -11,3 +11,10 @@
     alert(array.slice(-5,7));
     alert(array.slice(2));//2开始到最后
 }}}
+
+2. 序列化表单
+
+{{{
+$("#FORM").serialize()
+
+}}}

@@ -2,10 +2,11 @@
 
 = Programmar  =
 哥写的不是程序是爱
-* [[Python]]
-* [[JavaScript]]
-* [[AngularJs]]
+* 编程语言 [[Python]] | [[JavaScript]]
+* 编程框架 [[AngularJs]] | [[Jfinal]]
 * [[编程工具]]  
+* 数据库| [[DB2]] | [[MongoDB]] | [[Sqlite]]
+* 操作系统| [[Shell]] 
 
 = Reader =
 读书不是一件急于求成的事
@@ -13,7 +14,7 @@
 
 = Experience = 
 汇聚点滴思考，探索生活百态,走近科学......
-* [[随便记录]]
+* [[随便记录]] | [[微幸福]]
 * [[项目管理]]
 
 = Brain Dead =
@@ -21,7 +22,7 @@
 * [[这碗鸡汤]]
 
 = Study Note = 
-* [[吉他]]
+* [[吉他]] | [[健身]]
 * [[VimWiki]]
 
 = 信息记录 =

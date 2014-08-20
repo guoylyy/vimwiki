@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>Mongo-Ruby</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/wiki.css" rel="stylesheet">
+    <script src="../static/js/jquery-1.10.2.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/wiki.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="content" id="content">
+
+<h1 id="toc_1">MongoDB and Ruby</h1>
+
+<p>
+在ruby中使用mongodb
+</p>
+<pre>
+sudo gem install mongo
+sudo gem install mongo_ext
+
+mongodb 支持了多种的表达式，比如说 $gt $gte
+当我们需要查询的时候可以调用：
+
+XXX.find({:a=&gt;{“$gte =&gt; 5}}) //查询XXX对象中a属性大于等于5的结果
+
+同时，还可以支持过滤条件查询
+
+XXX.find({:a=&gt;{“$gte =&gt; 5}, limit:10})
+XXX.find({:a=&gt;{“$gte =&gt; 5}, sort:[:j,:desc]})
+
+
+update可以支持原子操作，但是要借助类似的内部语句：
+coll.update({:j=&gt;0},{“$inc”=&gt;{:j=&gt;1}})
+这样的语法还有很多，如 $set, $unset….
+
+MongoDB 在Ruby中一些好用的库：
+- MongoMapper
+- - Mongoid
+- - activerecord-alt-mongo-adapter
+</pre>
+
+      </div>
+
+    </div>
+  </body>
+</html>
