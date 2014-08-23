@@ -1,0 +1,20 @@
+= Django =
+
+1. 上传图片代码
+{{{
+from django.http import HttpResponse  
+import ImageFile  
+  
+def addPicture(request):  
+    if request.method == 'POST':  
+        form = PictureForm(request.POST, request.FILES)  
+        if form.is_valid():  
+            f = request.FILES["imagefile"]  
+            parser = ImageFile.Parser()  
+            for chunk in f.chunks():  
+                parser.feed(chunk)  
+            img = parser.close()  
+            # 在img被保存之前，可以进行图片的各种操作，在各种操作完成后，在进行一次写操作  
+            #             img.save("yoursavepath")  
+
+}}

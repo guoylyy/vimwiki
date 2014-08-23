@@ -1,34 +1,37 @@
 = Index=
 
-= Programmar  =
+= Current Steak = 
+这是一些想坚持做的事情，就写在这里方便打卡了
+* [[Guitar-RJJ吉他班第二期总结]]
+* [[健身]] | [[2014健身日拱一卒]]
+* [[英语]] | [[2014英语日拱一卒]]
+
+= Hi Programmar  =
 哥写的不是程序是爱
 * 编程语言 [[Python]] | [[JavaScript]]
-* 编程框架 [[AngularJs]] | [[Jfinal]]
+* 编程框架 [[AngularJs]] | [[Jfinal]] | [[Django]]
 * [[编程工具]]  
 * 数据库| [[DB2]] | [[MongoDB]] | [[Sqlite]]
-* 操作系统| [[Shell]] 
-
-= Reader =
+* 操作系统| [[Shell]] * [[随手技术记录]] 
+= Hello Book =
 读书不是一件急于求成的事
 * [[2014读书列表]]
 
-= Experience = 
+= OH Life = 
 汇聚点滴思考，探索生活百态,走近科学......
-* [[随便记录]] | [[微幸福]]
+* [[随便记录]] | [[微幸福]] | [[郭老板的段子]]
+* [[思维日记]]
 * [[项目管理]]
 
-= Brain Dead =
+= My Brain Dead =
 神经病的幻想冥想思想
 * [[这碗鸡汤]]
 
-= Study Note = 
+= I want to know more = 
 * [[吉他]] | [[健身]]
 * [[VimWiki]]
 
-= 信息记录 =
+= Collections =
 * [[杂项信息]]
 * [[做个UZN]]
-
-= TODO = 
-这是一些想坚持做的事情，就写在这里方便打卡了
 

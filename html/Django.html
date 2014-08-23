@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>Django</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/wiki.css" rel="stylesheet">
+    <script src="../static/js/jquery-1.10.2.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/wiki.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="content" id="content">
+
+<h1 id="toc_1">Django</h1>
+
+<p>
+1. 上传图片代码
+</p>
+<pre>
+from django.http import HttpResponse  
+import ImageFile  
+  
+def addPicture(request):  
+    if request.method == 'POST':  
+        form = PictureForm(request.POST, request.FILES)  
+        if form.is_valid():  
+            f = request.FILES["imagefile"]  
+            parser = ImageFile.Parser()  
+            for chunk in f.chunks():  
+                parser.feed(chunk)  
+            img = parser.close()  
+            # 在img被保存之前，可以进行图片的各种操作，在各种操作完成后，在进行一次写操作  
+            #             img.save("yoursavepath")  
+
+}}
+</pre>
+
+      </div>
+
+    </div>
+  </body>
+</html>
