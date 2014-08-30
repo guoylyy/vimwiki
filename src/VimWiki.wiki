@@ -18,6 +18,9 @@ It is necessary to refernce Vim Note if you try to use VimWiki.
 
 }}}
 
+外部链接
+[http://www sdsaf]
+
 == Wiki 语法 ==
 
 {{{

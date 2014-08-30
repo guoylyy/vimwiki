@@ -2,6 +2,31 @@
 == 笔记 ==
 * [[DB2命名规范]]
 
+== Java 中使用DB2 ==
+{{{
+    public static void main(String[] args) {
+
+        String tableName = "TS_TAICANG.T_FISCAL_INCOME_FACT";
+        String url = "jdbc:db2://" + GlobalConfig.ip + ":" + GlobalConfig.port
+                + "/KPIDB";
+
+        QueryRunner runner = new QueryRunner();
+
+        try {
+            Class.forName("com.ibm.db2.jcc.DB2Driver").newInstance();
+            Connection connection2 = DriverManager.getConnection(url,
+                    GlobalConfig.username, GlobalConfig.password);
+
+            Object[] list =  (Object[]) runner.query(connection2, "select * from " + tableName,
+                    new ArrayHandler());
+            System.out.println(list.length);
+            System.out.println(list[0]);
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }
+    }
+}}}
 
 == 学习资料 == 
-* 
+* [[http://www.oschina.net/code/piece_full?code=35579| DBUtilis]] 

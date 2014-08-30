@@ -24,10 +24,36 @@
 
 </ul>
 
+<h2 id="toc_1.2">Java 中使用DB2</h2>
+<pre>
+    public static void main(String[] args) {
 
-<h2 id="toc_1.2">学习资料</h2>
+        String tableName = "TS_TAICANG.T_FISCAL_INCOME_FACT";
+        String url = "jdbc:db2://" + GlobalConfig.ip + ":" + GlobalConfig.port
+                + "/KPIDB";
+
+        QueryRunner runner = new QueryRunner();
+
+        try {
+            Class.forName("com.ibm.db2.jcc.DB2Driver").newInstance();
+            Connection connection2 = DriverManager.getConnection(url,
+                    GlobalConfig.username, GlobalConfig.password);
+
+            Object[] list =  (Object[]) runner.query(connection2, "select * from " + tableName,
+                    new ArrayHandler());
+            System.out.println(list.length);
+            System.out.println(list[0]);
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }
+    }
+</pre>
+
+<h2 id="toc_1.3">学习资料</h2>
 <ul>
 <li>
+<a href="http://www.oschina.net/code/piece_full?code=35579">DBUtilis</a> 
 
 </ul>
 
