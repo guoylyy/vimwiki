@@ -1,0 +1,14 @@
+= Pip =
+Pip 是linux下的一个python包管理系统，十分好用，方便快捷
+
+=== Pip 批量安装 ===
+先设置一个requirement.txt文件，将需要安装的包写进去
+{{{
+flask==0.9
+Flask-Catch==0.60
+}}}
+
+然后可以执行
+{{{
+  pip install -r requirement.txt
+}}}

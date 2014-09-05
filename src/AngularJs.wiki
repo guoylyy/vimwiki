@@ -1,1 +1,11 @@
 = Angular JS = 
+
+1. ng-for 
+{{{
+   <th ng-repeat="m in months">{{m | month_cut}}</th>
+}}}
+
+2. ng-if 
+{{{
+
+}}}

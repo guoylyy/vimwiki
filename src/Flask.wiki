@@ -1,0 +1,34 @@
+= Flask =
+
+{{{
+  Installation:
+    pip install flask
+    pip install flask-restful
+  
+Flask + Uwsgi:
+    uwsgi -s 127.0.0.1:9001 -w flask-test:app -d /var/log/uwsgi.log
+}}}
+
+* [[Flask-RestFul]]
+* [[Flask-问题列表]]
+
+=== Flask Base ===
+是一个模板项目，可以指导我们进行开发， https://github.com/notedit/flask-base
+
+=== 几个比较好的repo ===
+- https://github.com/laiwei/thepast
+- - https://github.com/laoqiu/pypress
+- - https://github.com/guotie/flaskbbs
+- - https://github.com/danjac/newsmeme
+
+=== 目前存在的问题 ===
+* 如何构建项目？
+* 如何数据库迁移？
+* 如何使用蓝图？
+
+=== 几个非常重要的插件要熟练使用 ===
+* [[flask-sqlachemy]]
+* flask-restful
+* flask-imageattache
+* sqlachemy-migrate
+* BluePrint

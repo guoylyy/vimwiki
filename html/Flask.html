@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/wiki.css" rel="stylesheet">
+    <script src="../static/js/jquery-1.10.2.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/wiki.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="content" id="content">
+
+<h1 id="toc_1">Flask</h1>
+
+<pre>
+  Installation:
+    pip install flask
+    pip install flask-restful
+  
+Flask + Uwsgi:
+    uwsgi -s 127.0.0.1:9001 -w flask-test:app -d /var/log/uwsgi.log
+</pre>
+
+<ul>
+<li>
+<a href="Flask-RestFul.html">Flask-RestFul</a>
+
+<li>
+<a href="Flask-问题列表.html">Flask-问题列表</a>
+
+</ul>
+
+<h3 id="toc_1.0.1">Flask Base</h3>
+<p>
+是一个模板项目，可以指导我们进行开发， <a href="https://github.com/notedit/flask-base">https://github.com/notedit/flask-base</a>
+</p>
+
+<h3 id="toc_1.0.2">几个比较好的repo</h3>
+<ul>
+<li>
+<a href="https://github.com/laiwei/thepast">https://github.com/laiwei/thepast</a>
+
+<li>
+- <a href="https://github.com/laoqiu/pypress">https://github.com/laoqiu/pypress</a>
+
+<li>
+- <a href="https://github.com/guotie/flaskbbs">https://github.com/guotie/flaskbbs</a>
+
+<li>
+- <a href="https://github.com/danjac/newsmeme">https://github.com/danjac/newsmeme</a>
+
+</ul>
+
+<h3 id="toc_1.0.3">目前存在的问题</h3>
+<ul>
+<li>
+如何构建项目？
+
+<li>
+如何数据库迁移？
+
+<li>
+如何使用蓝图？
+
+</ul>
+
+<h3 id="toc_1.0.4">几个非常重要的插件要熟练使用</h3>
+<ul>
+<li>
+<a href="flask-sqlachemy.html">flask-sqlachemy</a>
+
+<li>
+flask-restful
+
+<li>
+flask-imageattache
+
+<li>
+sqlachemy-migrate
+
+<li>
+BluePrint
+
+</ul>
+
+      </div>
+
+    </div>
+  </body>
+</html>

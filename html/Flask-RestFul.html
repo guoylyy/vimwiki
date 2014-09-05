@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask-RestFul</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/wiki.css" rel="stylesheet">
+    <script src="../static/js/jquery-1.10.2.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/wiki.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="content" id="content">
+
+<h1 id="toc_1">Flask RestFul</h1>
+
+<p>
+1. 提供parser功能，自动format输入form数据
+</p>
+<pre>
+post_parser.add_argument(
+’user_priority’, dest=’user_priority’,
+type=int, location=’form’,
+default=1, choices=range(5), help=’The user\’s priority’,
+)
+
+add_argument() lets you specify alternate locations to pull the values from.
+flask.Request can be used. For example:
+# Look only in the POST body
+# parser.add_argument(’name’, type=int, location=’form’) # Look only in the
+querystring
+parser.add_argument(’PageSize’, type=int, location=’args’) # From the request
+headers
+parser.add_argument(’User-Agent’, type=str, location=’headers’) # From http
+cookies
+parser.add_argument(’session_id’, type=str, location=’cookies’) # From file
+uploads
+Any variable on the
+￼￼￼￼parser.add_argument(’picture’, type=werkzeug.datastructures.FileStorage,
+location=’files’)
+
+</pre>
+
+<p>
+2. 可以format输出数据
+</p>
+<pre>
+    user_fields = {
+        ’id’: fields.Integer,
+        ’username’: fields.String,
+        ’email’: fields.String,
+        ’user_priority’: fields.Integer,
+        ’custom_greeting’: fields.FormattedString(’Hey there
+                {username}!’),
+        ’date_created’: fields.DateTime,
+        ’date_updated’: fields.DateTime,
+        'url' : fields.Url('Resource'),
+        ’links’: fields.Nested({
+                ’friends’:
+                fields.Url(’/Users/{id}/Friends’,
+                    absolute=True),
+                ’posts’:
+                fields.Url(’Users/{id}/Posts’,
+                    absolute=True),
+                }),
+    }
+   
+    @marshal_with(...fiels)
+    def get(self):
+        print 'fdsafafds' 
+    
+</pre>
+
+<p>
+3. Make response
+</p>
+<pre>
+app = Flask(__name__)
+api = restful.Api(app)
+@api.representation(’application/json’) 
+def json(data, code, headers=None):
+    resp = make_response(json.dumps(data), code) resp.headers.extend(headers or {})
+    return resp
+</pre>
+
+      </div>
+
+    </div>
+  </body>
+</html>

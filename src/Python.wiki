@@ -1,4 +1,12 @@
 = Python = 
+1. Python date to utc
+{{{
+    import datetime
+    import time
+    d = datetime.datetime(2011, 7, 21, 3, 13, 22, 259901)
+    time.mktime(d.timetuple()) 
+}}}
+
 
 
 

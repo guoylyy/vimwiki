@@ -49,3 +49,4 @@ new Date().format('yyyy-MM-dd');
 {{{
   list.join("");
 }}}
+5. encodeURIComponnect / decodeURIC
