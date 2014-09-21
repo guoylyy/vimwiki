@@ -1,0 +1,9 @@
+ = Git =
+
+ 1. Github可以在comment里面加入“fix #1” 来代表fix了issue 1
+ 
+ 2. Git ignore
+ {{{
+   Check it from github gitigone
+
+ }}}

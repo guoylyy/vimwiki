@@ -1,0 +1,19 @@
+= IT 写作规范 =
+自己感觉无论注释还是文档写作都不是很规范，所以需要研究一下。
+
+* 如何才能写得让人一目了然？
+* 有没有标准的模板可以模仿？
+
+
+1. 代码头部描述
+{{{
+    """
+        Flaskr Tests
+        ~~~~~~~~~~~~
+
+        Tests the Flaskr application.
+
+        :copyright: (c) 2014 by Armin Ronacher.
+        :license: BSD, see LICENSE for more details.
+    """
+}}}
