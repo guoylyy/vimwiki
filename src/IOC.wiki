@@ -1,4 +1,6 @@
  = IOC =
+
+[[开发记录]]
 [root@iocapp WBM_DE.AppTarget.WBMNode1.0]# pwd
 /opt/IBM/WebSphere/AppServer/profiles/wbmProfile1/logs/WBM_DE.AppTarget.WBMNode1.0
 

@@ -1,0 +1,16 @@
+= IOC开发记录=
+1. Freemarker 中文乱码问题
+{{{
+    <bean id="viewResolver"
+        class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+        <property name="viewClass"
+        value="org.springframework.web.servlet.view.freemarker.FreeMarkerView"
+        />
+        <property name="cache" value="true"/>
+        <property name="prefix" value=""/>
+        <property name="suffix" value=".html"/>
+        <property name="contentType"
+        value="text/html;charset=GB2312"></property>
+        </bean>
+
+}}}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>开发记录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/wiki.css" rel="stylesheet">
+    <script src="../static/js/jquery-1.10.2.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/wiki.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="content" id="content">
+
+<h1 id="toc_1">IOC开发记录</h1>
+<p>
+1. Freemarker 中文乱码问题
+</p>
+<pre>
+    &lt;bean id="viewResolver"
+        class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver"&gt;
+        &lt;property name="viewClass"
+        value="org.springframework.web.servlet.view.freemarker.FreeMarkerView"
+        /&gt;
+        &lt;property name="cache" value="true"/&gt;
+        &lt;property name="prefix" value=""/&gt;
+        &lt;property name="suffix" value=".html"/&gt;
+        &lt;property name="contentType"
+        value="text/html;charset=GB2312"&gt;&lt;/property&gt;
+        &lt;/bean&gt;
+
+</pre>
+
+      </div>
+
+    </div>
+  </body>
+</html>
